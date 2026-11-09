@@ -59,8 +59,8 @@ def createHouseParts(houseWidth, houseHeight, houseDepth):
     wall_Set = cmds.group(wall_A, wall_B, wall_C, wall_D)
 
     #Door
-    door = cmds.polyCube(width=0.5, height=houseHeight/2.0, depth=0.1)
-    cmds.move(houseWidth / 2.0, houseHeight / 4.0, houseDepth / 2.0)
+    door = cmds.polyCube(width= houseWidth / 4.0, height=houseHeight/2.0, depth=0.1)
+    cmds.move(0, houseHeight / 4.0, houseDepth / 2.0)
 
     #Roof
     roof = cmds.polyCube(width = houseWidth, height=0.4, depth=houseDepth)
