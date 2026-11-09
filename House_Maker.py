@@ -91,4 +91,22 @@ def createHouse(houseWidth, houseHeight, houseDepth):
     cmds.select(fullhouse)
     cmds.delete(all=True, ch=True)
 
-    
+
+# Connecting the geo back to the UI so the user can input the dimensions of the house
+def create_house_buttons():
+    houseWidth = cmds.intSliderGrp("width", query=True, value=True)
+    houseHeight = cmds.intSliderGrp("height", query=True, value=True)
+    houseDepth = cmds.intSliderGrp("depth", query=True, value=True)
+
+    createHouse(houseWidth, houseHeight, houseDepth)
+
+def create_random_house():
+    houseWidth = random.randint(1, 10)
+    houseHeight = random.randint(1, 10)
+    houseDepth = random.randint(1, 10)
+
+    createHouse(houseWidth, houseHeight, houseDepth)
+
+# Main
+if __name__ == "__main__":
+    create_ui()
