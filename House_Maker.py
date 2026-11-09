@@ -3,7 +3,7 @@ import random
 
 # UI set up: make ui for user to input house height, width and depth
 # Also allow user to add a chimney if they choose and create a random house as well
-# Window will delete/close old window if it's already open in the background when the user starts the program
+
 
 UI = cmds.window(title= "House Maker", width = 400)
 
