@@ -1,2 +1,11 @@
-# House_Maker
-Simple procedural house creator for maya + maya UI box with sliders
+GitHub URL:
+
+
+Challenge Feature(s):
+- Use of GUI not explored in class
+- Features contribute to added features
+- Utilized different techniques found in maya:
+- Face select
+- Beveling a face
+- Uniting poly objects within python
+- Generating a random house
